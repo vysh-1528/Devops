@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hackathon Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color:rgb(199, 178, 153);
+      padding: 40px;
+    }
+    .form-container {
+      background: #fff;
+      max-width: 600px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+       
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .radio-group,
+    .checkbox-group {
+      margin-bottom: 15px;
+    }
+    .radio-group label,
+    .checkbox-group label {
+      font-weight: normal;
+      display: block;
+      margin-bottom: 8px;
+    }
+    textarea {
+      resize: vertical;
+    }
+    button {
+      background-color: #007bff;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-container">
+  <h2> <centre>Hack With Us</centre></h2>
+          <label for="name">Full Name:</label>
+    <input type="text" id="name" name="fullname" required>
+
+       <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <!-- Phone Number -->
+    <label for="password">Password:</label>
+    <input type="tel" id="phone" name="password" >
+    
+    <label>Gender:</label>
+    <div class="radio-group">
+      <label><input type="radio" name="gender" value="Male" required> Male</label>
+      <label><input type="radio" name="gender" value="Female"> Female</label> 
+    </div>
+
+       <label for="team">Team Size:</label>
+    <select id="team" name="team_size" required>
+     <option value="1">Solo (1)</option>
+      <option value="2">Team of 2</option>
+      <option value="3">Team of 3</option>
+      <option value="4">Team of 4</option>
+    </select>
+
+   
+    <label>Select Events to Participate In:</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="event1" value="Coding Challenge"> Coding Challenge</label>
+      <label><input type="checkbox" name="event2" value="UI/UX Design Sprint"> UI/UX Design Sprint</label>
+      <label><input type="checkbox" name="event3" value="AI Ideathon"> AI Ideathon</label>
+      <label><input type="checkbox" name="event4" value="Hardware Hack"> Hardware Hack</label>
+    </div>
+
+        <label for="motivation">Why do you want to join the Hackathon?</label>
+    <textarea id="motivation" name="motivation" rows="3" required></textarea>
+   
+    <!-- Submit -->
+    <button type="submit">Register</button>
+
+  </form>
+</div>
+
+</body>
+</html>
+register.html
+Displaying register.html.
